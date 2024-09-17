@@ -1,19 +1,46 @@
 <!DOCTYPE>
-<html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Now </title>
-</head>
-<body>
-    <header>
-        <h1>About TechCon 2024</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register for TechCon 2024</title>
+    </head>
+    <body>
+        <header>
+            <h1>Register for TechCon 2024</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="register.html">Register</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+         <form action="/submit-registration" method="post">
+            <legend>Register for TechCon</legend>
+                <fieldset>
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name" name="Name" required>
+
+                    <label for="email">Email Adress: </label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                    <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="terms.html">Terms and Conditions</a>.
+                    </label>
+
+                    <button type="submit">Register Now</button>
+                </fieldset>
+         </form>
+         </main>
+        <footer>
+          <p>&copy; 2024 TechCon. All rights reserved.</p> 
+        </footer>
+
+    </body>
+</html>
