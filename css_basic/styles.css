@@ -1,31 +1,70 @@
-body{
-
+body {
     display: flex;
     flex-direction: column;
-   
+    border: 1px solid black;
 }
 
 main {
     display: flex;
-    flex-direction :row;
+    flex-direction: row;
     margin: 1px;
-    flex:auto;
+    flex: auto; /* Use 'flex: auto' instead of 'flex:auto;' */
+    border: 1px solid black;
 }
 
 article {
-    flex:2;
+    flex: 2;
     overflow-y: auto;
+    border: 1px solid black;
 }
 
-aside{
-    flex:1;
+aside {
+    flex: 1;
     overflow-y: auto;
+    border: 1px solid black;
 }
 
 header, footer {
     padding: 10px;
-    background-color: white;
+    background-color: white; /* Missing semicolon here */
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
 
+a:hover {
+    color: blueviolet;
+}
 
+a:visited {
+    color: blue;
+}
+
+h1, h2 {
+    font-size: large;
+    text-decoration: underline;
+    justify-content: center;
+    color: rgb(226, 119, 155);
+}
+
+.first {
+    font-weight: 200;
+}
+
+.second {
+    font-size: small;
+}
+
+a {
+    display: inline-block;
+}
+header ul{
+    list-style-type:none;
+    padding: 0; 
+    margin: 0; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
