@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    text-size-adjust: 50px;
+    color: white;
+}
+
+.inspiration{
+    text-align: center;
+    margin-top: 0;
+}
+
+button{
+    text-align: center;
+    background-color: purple ;
+    text-decoration: white;
+}
+
+body {
+    background-image: url(images/Object.png);
+    background-attachment: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 10px;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    margin-left: 20px;
+    
+}
+
+
+
