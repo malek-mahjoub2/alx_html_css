@@ -126,13 +126,70 @@ li{
     text-align: left;
 }
 
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+}
+
 .two {
-    text-align: center;
+    text-align: center; /* Center the heading text */
+    color: purple; /* Change heading color to purple */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
 .sec2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+    display: flex; /* Keep items in a row */
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
+
+.two {
+    text-align: center; /* Center the heading text */
+    color: purple; /* Change heading color to purple */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.sec2 {
+    display: flex; /* Keep items in a row */
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 15px; /* Add space between tutorial items */
+    text-align: center; /* Center text */
+}
+
+.author {
+    position: relative; /* Positioning for absolute elements */
+    margin: 5px 0; /* Space above and below the author section */
+}
+
+.author-img {
+    width: 30px; /* Set the width of the author image */
+    height: 30px; /* Set the height of the author image */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.author-name {
+    position: absolute; /* Position the name over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half width/height */
+    font-size: 10px; /* Adjust font size as needed */
+    color: white; /* Text color (adjust as needed) */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+}
+
+.stars {
+    display: flex; /* Display stars in a row */
+    margin: 5px 0; /* Space above and below stars */
+}
+
+
