@@ -128,68 +128,84 @@ li{
 
 .sec2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
 }
 
 .two {
-    text-align: center; /* Center the heading text */
-    color: purple; /* Change heading color to purple */
-    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; 
+    color: purple;
+    margin-bottom: 20px; 
+}
+
+.tutorials-section {
+    margin-top:80px; 
+}
+
+.section-title {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.black-text {
+    color: black; 
+}
+
+.purple-text {
+    color: purple; 
 }
 
 .sec2 {
-    display: flex; /* Keep items in a row */
-    justify-content: space-around; /* Distribute items evenly */
-    flex-wrap: nowrap; /* Prevent wrapping to next line */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-}
-
-.two {
-    text-align: center; /* Center the heading text */
-    color: purple; /* Change heading color to purple */
-    margin-bottom: 20px; /* Space below the heading */
-}
-
-.sec2 {
-    display: flex; /* Keep items in a row */
-    justify-content: space-around; /* Distribute items evenly */
-    flex-wrap: nowrap; /* Prevent wrapping to next line */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 20px;
 }
 
 .tutorial {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 15px; /* Add space between tutorial items */
-    text-align: center; /* Center text */
+    background: white; 
+    
+    padding: 15px; 
+    margin: 10px; 
+    width: 200px; 
+    text-align: center; 
+}
+
+.img-container {
+    position: relative; 
+}
+
+.play-button {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
 .author {
-    position: relative; /* Positioning for absolute elements */
-    margin: 5px 0; /* Space above and below the author section */
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: 10px 0; 
 }
 
 .author-img {
-    width: 30px; /* Set the width of the author image */
-    height: 30px; /* Set the height of the author image */
-    border-radius: 50%; /* Make the image circular */
-}
-
-.author-name {
-    position: absolute; /* Position the name over the image */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset by half width/height */
-    font-size: 10px; /* Adjust font size as needed */
-    color: white; /* Text color (adjust as needed) */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+    width: 30px; 
+    border-radius: 50%;
+    margin-right: 5px; 
 }
 
 .stars {
-    display: flex; /* Display stars in a row */
-    margin: 5px 0; /* Space above and below stars */
+    display: flex;
+    align-items: center;
 }
-
-
+.friend-smile {
+    border-radius: 100%;
+}
+.second {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 50px;
+    word-spacing: 5px;
+}
