@@ -234,3 +234,25 @@ li{
     z-index: 1; 
 }
 
+.white-text{
+    color: white;
+}
+.membership{
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(17, 17, 58);
+ }
+.smile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smile-prg {
+    color: white;
+}
+
+.smile-title{
+    color: white;
+}
