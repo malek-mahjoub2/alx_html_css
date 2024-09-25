@@ -30,3 +30,45 @@ ul{
 li{
     text-decoration: none;
 }
+
+.welcome button{
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color:#FF6565;
+    width: 637px;
+    height: 184px;
+    top: 910px;
+    left: 382px;
+}
+
+.action {
+    width: 637px;
+    height: 184px;
+    top: 910px;
+    left: 382px;
+}
+.option {
+    display: flex;
+    justify-content: space-around;
+}
+.results{
+    width: 1400px;
+    height: 650px;
+    top: 1494px;
+    left: 1px;
+    background-image: url(images/headphones_hero_2.jpg);
+}
+.results h2,p {
+    text-align: center;
+    color: white;
+
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+
+}
+
