@@ -1,0 +1,32 @@
+
+.welcome{
+    width: 1400px;
+    height: 800px;
+    gap: 0px;
+    opacity: 0px;
+    background-image:url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position:relative;
+
+}
+nav {
+    width: 1000.39px;
+    height: 32px;
+    top: 27.76px;
+    left: 200.61px;
+    gap: 0px;
+    opacity: 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+ul{
+    display:flex;
+}
+li{
+    text-decoration: none;
+}
