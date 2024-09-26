@@ -68,7 +68,20 @@ li{
     display: flex;
     justify-content: center;
     justify-content: space-around;
+}
+.image-container{
+    position:relative;
+}
+.text {
+    position:absolute;
+    color:white;
+    text-align: center;
     
-
 }
 
+.first,.second,.third
+,.forth{
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+}
