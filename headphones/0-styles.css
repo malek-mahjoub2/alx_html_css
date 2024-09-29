@@ -1,87 +1,335 @@
+/* Global styles for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-.welcome{
-    width: 1400px;
-    height: 800px;
-    gap: 0px;
-    opacity: 0px;
-    background-image:url(images/headphones_hero_1.jpg);
+body {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    position:relative;
-
+    width: 1400px;
+    height: 800px;
 }
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;               
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: flex-start; /* Start from the top */
+}
+
+/* Navigation styles */
 nav {
-    width: 1000.39px;
-    height: 32px;
-    top: 27.76px;
-    left: 200.61px;
-    gap: 0px;
-    opacity: 0px;
-    display:flex;
+    width: 100%;
+    top: 37px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    z-index: 1;
+    padding: 20px 40px;
+   
+}
+
+nav img {
+    width: 180px;
+}
+ul {
+    list-style-type: none;   
+    display: flex; /* Use flexbox for links */
+    justify-content: flex-end; /* Align links to the right */
+    padding: 0;           
+    margin: 0;            
+}
+
+li {
+    margin-left: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 30px;
+    margin-top:0; 
     text-align: center;
 }
 
-ul{
-    display:flex;
+/* Welcome section styles */
+.welcome {
+    height: 800px; /* Adjust height as needed */
+    text-align: center;
+    position: relative;
+    top: 372px;
+    margin: 20px auto; /* Center with some margin */
+    color: white;
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /
 }
-li{
-    text-decoration: none;
-}
-
 .welcome button{
-    justify-content: center;
     border: none;
-    border-radius: 5px;
-    background-color:#FF6565;
-    width: 637px;
-    height: 184px;
-    top: 910px;
-    left: 382px;
+    border-radius: 20px;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    margin-top: 30px; /* Space above button */
+    font-weight: bold;
+    color: white;
+    margin-right: 70px;
+    font-size: 17px
 }
 
-.action {
-    width: 637px;
-    height: 184px;
-    top: 910px;
-    left: 382px;
+
+
+.contact button {
+    border: none;
+    border-radius: 20px;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    margin-top: 30px; /* Space above button */
+    font-weight: bold;
+    color: white;
+    margin-left: 600px;
+    font-size: 17px
 }
-.option {
-    display: flex;
-    justify-content: space-around;
+
+.first {
+    padding-top: 0px;
+    margin-top: 0px;
 }
-.results{
+
+/* Navigation link styles */
+a {
+    text-decoration: none;     
+    color: white;      
+}
+
+.frequency {
+    width: 94.2px;
+    height: 65.36px;
+    top: 0.02px;
+    left: 56px;
+}
+.video {
+    width: 67.59px;
+    height: 76.8px;
+    left: 72px;
+}
+.music {
+    width: 51.66px;
+    height: 57.27px;
+    left: 78px;
+}
+.hearing {
+    width: 61.43px;
+    height: 61.44px;
+    top: -0px;
+    left: 74px;
+}
+
+
+.work {
+    background-color: white;
+    max-width: 1002px; 
+    margin: 0 ; 
+    padding: 20px; 
+}
+.options {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: nowrap; /* Allow wrapping for responsiveness */
+    gap: 10px; /* Space between items */
+}
+
+.option-item {
+    width: 207px; /* Width for each option item */
+    height: auto; /* Allow height to adjust automatically */
+    text-align: center; /* Center text */
+    opacity: 1; /* Set opacity as needed */
+}
+
+.option-item img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.option-item h3 {
+    margin: 10px 0 5px; /* Space above and below the title */
+}
+
+.option-item p {
+    margin: 0; /* Remove margin for paragraphs */
+    font-size: 14px; /* Adjust font size if needed */
+}
+.results {
     width: 1400px;
     height: 650px;
     top: 1494px;
     left: 1px;
     background-image: url(images/headphones_hero_2.jpg);
+    padding: 20px 0; /* Add padding around the content */
 }
-.results h2,p {
-    text-align: center;
-    color: white;
-
-}
-.photos {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-.image-container{
-    position:relative;
-}
-.text {
-    position:absolute;
+.res {
+    height: 40px;
+    top: 141px;
+    left: 477px;
     color:white;
     text-align: center;
-    
+    margin-top: 160px;
+    font-size: 30px;
 }
 
-.first,.second,.third
-,.forth{
-    display:flex;
+.results h2, .results p {
     text-align: center;
-    justify-content: space-around;
+    color: white;
 }
+
+/* Photos section styles */
+.photos {
+    display: flex;
+    justify-content: space-around; /* Space images evenly */
+    flex-wrap: nowrap; /* Wrap items for responsiveness */
+    margin-top: 170px;
+}
+.pentagone {
+    width: 180px;
+    height: 180px;
+    top: 381px;
+    left: 207px;
+} 
+
+.image-container {
+    position: relative; /* Allow absolute positioning of child elements */
+    width: 200px; /* Set width for the container */
+    height: 200px; /* Set height for the container */
+    overflow: hidden; /* Ensure contents do not overflow */
+}
+
+
+
+.text {
+    position: absolute; /* Position the text absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    text-align: center; /* Center text */
+    color: white; /* Set text color (adjust as needed) */
+}
+.text h3{
+    font-size: 30px;
+}
+.text h3,
+.text p {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove padding */
+}
+/* Flex settings for multiple sections */
+.options {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Optional: padding around the container */
+}
+
+.do {
+    display: flex; /* Flexbox for each item */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+    width: 200px; /* Set a fixed width for each item */
+}
+
+.do img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.do .containt {
+    margin-top: 10px; /* Space between image and text */
+}
+
+.do h3 {
+    margin: 5px 0; /* Space around heading */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.do p {
+    margin: 0; /* Remove default margin for paragraphs */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Contact section styles */
+.contact {
+    padding: 20px; /* Add padding for spacing */
+}
+.contact h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-group {
+    margin: 10px 0; 
+    text-align: center;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    color: #333; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none; /* Remove border */
+    border-bottom: 2px solid #ccc; /* Create a bottom border */
+    outline: none; /* Remove outline */
+    width: 100%; /* Full width */
+    padding: 5px 0; /* Padding for better spacing */
+    font-size: 16px; /* Font size */
+    color: #333; /* Input text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 2px solid #FF6565; /* Change color on focus */
+}
+#name ,#email,#message{
+    width: 10%; 
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color:#071629;
+    position: relative;
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+}
+.fin {
+    width: 180px;
+    margin-right: 900px; 
+}
+.social img {
+    width: 30px;
+    height: 30px;
+    top: 90px;
+    left: 1070px;
+    color:white;
+}
+.social {
+    margin-left: 500px;
+}
+
