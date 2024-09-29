@@ -1,0 +1,44 @@
+.contact {
+    padding: 20px; 
+}
+.contact h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-group {
+    margin: 10px 0; 
+    text-align: center;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    color: #333; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none; /* Remove border */
+    border-bottom: 2px solid #ccc; /* Create a bottom border */
+    outline: none; /* Remove outline */
+    width: 100%; /* Full width */
+    padding: 5px 0; /* Padding for better spacing */
+    font-size: 16px; /* Font size */
+    color: #333; /* Input text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 2px solid #FF6565; /* Change color on focus */
+}
+#name ,#email,#message{
+    width: 10%; 
+}
