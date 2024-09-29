@@ -1,0 +1,57 @@
+.frequency {
+    width: 94.2px;
+    height: 65.36px;
+    top: 0.02px;
+    left: 56px;
+}
+.video {
+    width: 67.59px;
+    height: 76.8px;
+    left: 72px;
+}
+.music {
+    width: 51.66px;
+    height: 57.27px;
+    left: 78px;
+}
+.hearing {
+    width: 61.43px;
+    height: 61.44px;
+    top: -0px;
+    left: 74px;
+}
+
+
+.work {
+    background-color: white;
+    max-width: 1002px; 
+    margin: 0 ; 
+    padding: 20px; 
+}
+.options {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: nowrap; /* Allow wrapping for responsiveness */
+    gap: 10px; /* Space between items */
+}
+
+.option-item {
+    width: 207px; /* Width for each option item */
+    height: auto; /* Allow height to adjust automatically */
+    text-align: center; /* Center text */
+    opacity: 1; /* Set opacity as needed */
+}
+
+.option-item img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.option-item h3 {
+    margin: 10px 0 5px; /* Space above and below the title */
+}
+
+.option-item p {
+    margin: 0; /* Remove margin for paragraphs */
+    font-size: 14px; /* Adjust font size if needed */
+}
