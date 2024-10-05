@@ -1,353 +1,461 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
     background-image: url(images/headphones_hero_1.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    width: 1400px;
-    height: 3006px;
-    top: -1835px;
-    left: -446px;
-}
 
-.container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+
 }
 
 nav {
-    width: 100%;
-    top: 37px;
     display: flex;
+
     justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    padding: 20px 40px;
-}
-
-nav img {
-    width: 180px;
-}
-
-ul {
+    padding: 1em;
     list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
     padding: 0;
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    nav img {
-        width: 120px;
-    }
+nav a {
+    margin: 0 1em;
+    color: white;
+    /* Set link color to white */
+    text-decoration: none;
+    /* Optional margin for links */
+}
 
-    li {
-        margin-left: 20px;
-    }
+main {
+    width: 637px;
+    /* Set width */
+    height: 313px;
+    /* Set height */
+    display: flex;
+    /* Use Flexbox for alignment */
+    flex-direction: column;
+    /* Arrange items vertically */
+    justify-content: center;
+    /* Center content vertically */
+    text-align: center;
+    margin: 200px;
+    padding: 30px;
+}
 
-    h1 {
-        font-size: 30px;
-        margin-top: 0;
-        text-align: center;
-    }
+button {
+    background-color: #FF6565;
+    ;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for size */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+}
 
-    .welcome {
-        height: auto;
-        text-align: center;
-        position: relative;
-        padding: 10px;
-        top: 372px;
-        margin: 20px auto;
-        color: white;
-        background-size: cover;
-        background-position: center;
-    }
+.frequency {
+    width: 94.2px;
+    height: 65.36px;
+    top: 0.02px;
+    left: 56px;
+}
 
-    .welcome button {
-        border: none;
-        border-radius: 20px;
-        background-color: #FF6565;
-        width: 162px;
-        height: 44px;
-        margin-top: 30px;
-        font-weight: bold;
-        color: white;
-        margin-right: 70px;
-        font-size: 17px;
-    }
+.video {
+    width: 67.59px;
+    height: 76.8px;
+    left: 72px;
+}
 
-    .contact button {
-        border: none;
-        width: 100%;
-        margin: 20px 0;
-        border-radius: 20px;
-        background-color: #FF6565;
-        width: 162px;
-        height: 44px;
-        margin-top: 30px;
-        font-weight: bold;
-        color: white;
-        margin-left: 600px;
-        font-size: 17px;
-    }
+.music {
+    width: 51.66px;
+    height: 57.27px;
+    left: 78px;
+}
 
-    .first {
-        padding-top: 0px;
-        margin-top: 0px;
-    }
+.hearing {
+    width: 61.43px;
+    height: 61.44px;
+    top: -0px;
+    left: 74px;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+.options {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space items evenly */
+    flex-wrap: nowrap;
+    /* Allow wrapping for responsiveness */
+    gap: 10px;
+    /* Space between items */
+}
 
-    .frequency {
-        width: 94.2px;
-        height: 65.36px;
-        top: 0.02px;
-        left: 56px;
-    }
+.option-item {
+    width: 207px;
+    /* Width for each option item */
+    height: auto;
+    /* Allow height to adjust automatically */
+    text-align: center;
+    /* Center text */
+    opacity: 1;
+    /* Set opacity as needed */
+}
 
-    .video {
-        width: 67.59px;
-        height: 76.8px;
-        left: 72px;
-    }
+.option-item img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
 
-    .music {
-        width: 51.66px;
-        height: 57.27px;
-        left: 78px;
-    }
+.option-item h3 {
+    margin: 10px 0 5px;
+    /* Space above and below the title */
+}
 
-    .hearing {
-        width: 61.43px;
-        height: 61.44px;
-        top: -0px;
-        left: 74px;
-    }
+.option-item p {
+    margin: 0;
+    /* Remove margin for paragraphs */
+    font-size: 14px;
+    /* Adjust font size if needed */
+}
 
-    .work {
-        background-color: white;
-        max-width: 1002px;
-        margin: 0;
-        padding: 10px;
-    }
+.work {
+    background-color: white;
+    max-width: 1002px;
+    margin: 0;
+    padding: 20px;
+}
 
-    .options {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        gap: 10px;
-    }
+.options {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space items evenly */
+    flex-wrap: nowrap;
+    /* Allow wrapping for responsiveness */
+    gap: 10px;
+    /* Space between items */
+}
 
-    .option-item {
-        width: 207px;
-        height: auto;
-        text-align: center;
-        opacity: 1;
-    }
+.option-item {
+    width: 207px;
+    /* Width for each option item */
+    height: auto;
+    /* Allow height to adjust automatically */
+    text-align: center;
+    /* Center text */
+    opacity: 1;
+    /* Set opacity as needed */
+}
 
-    .option-item img {
-        max-width: 100%;
-        height: auto;
-    }
+.option-item img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
 
-    .option-item h3 {
-        margin: 10px 0 5px;
-    }
+.option-item h3 {
+    margin: 10px 0 5px;
+    /* Space above and below the title */
+}
 
-    .option-item p {
-        margin: 0;
-        font-size: 14px;
-    }
+.option-item p {
+    margin: 0;
+    /* Remove margin for paragraphs */
+    font-size: 14px;
+    /* Adjust font size if needed */
+}
 
-    .results {
-        width: 1400px;
-        height: 650px;
-        top: 1494px;
-        left: 1px;
-        background-image: url(images/headphones_hero_2.jpg);
-        padding: 20px 0;
-    }
+.results {
+    width: 1400px;
+    height: 650px;
+    top: 1494px;
+    left: 1px;
+    background-image: url(images/headphones_hero_2.jpg);
+    padding: 20px 0;
+    /* Add padding around the content */
+}
 
-    .res {
-        height: 40px;
-        top: 141px;
-        left: 477px;
-        color: white;
-        text-align: center;
-        margin-top: 160px;
-        font-size: 30px;
-    }
+.res {
+    height: 40px;
+    top: 141px;
+    left: 477px;
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    font-size: 30px;
+}
 
-    .results h2,
-    .results p {
-        text-align: center;
-        color: white;
-    }
+.results h2,
+.results p {
+    text-align: center;
+    color: white;
+}
 
-    .photos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-        margin-top: 170px;
-    }
+/* Photos section styles */
+.photos {
+    display: flex;
+    justify-content: space-around;
+    /* Space images evenly */
+    flex-wrap: nowrap;
+    /* Wrap items for responsiveness */
+    margin-top: 170px;
+}
 
-    .pentagone {
-        width: 140px;
-        height: 140px;
-        top: 381px;
-        left: 207px;
-    }
+.pentagone {
+    width: 180px;
+    height: 180px;
+    top: 381px;
+    left: 207px;
+}
 
-    .image-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-    }
+.image-container {
+    position: relative;
+    /* Allow absolute positioning of child elements */
+    width: 200px;
+    /* Set width for the container */
+    height: 200px;
+    /* Set height for the container */
+    overflow: hidden;
+    /* Ensure contents do not overflow */
+}
 
-    .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-    }
 
-    .text h3 {
-        font-size: 30px;
-    }
 
-    .text h3,
-    .text p {
-        margin: 0;
-        padding: 0;
-    }
+.text {
+    position: absolute;
+    /* Position the text absolutely within the container */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
+    text-align: center;
+    /* Center text */
+    color: white;
+    /* Set text color (adjust as needed) */
+}
 
-    .options {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-    }
+.text h3 {
+    font-size: 30px;
+}
 
-    .do {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 200px;
-    }
+.text h3,
+.text p {
+    margin: 0;
+    padding: 0;
+}
 
-    .do img {
-        max-width: 100%;
-        height: auto;
-    }
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
 
-    .do .containt {
-        margin-top: 10px;
-    }
+.do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
 
-    .do h3 {
-        margin: 5px 0;
-        font-size: 18px;
-    }
+.do img {
+    max-width: 100%;
+    height: auto;
+}
 
-    .do p {
-        margin: 0;
-        font-size: 14px;
-    }
+.do .containt {
+    margin-top: 10px;
+}
 
-    .contact {
-        padding: 20px;
-    }
+.do h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
 
-    .contact h2 {
-        font-weight: bold;
-        text-align: center;
-        font-size: 40px;
-    }
+.do p {
+    margin: 0;
+    font-size: 14px;
+}
 
-    .form-group {
-        margin: 10px 0;
-        text-align: center;
-        font-weight: bold;
-    }
+.results {
+    width: 1400px;
+    height: 650px;
+    top: 1494px;
+    left: 1px;
+    background-image: url(images/headphones_hero_2.jpg);
+    padding: 20px 0;
+    /* Add padding around the content */
+}
 
-    .form-group {
-        margin-bottom: 20px;
-    }
+.res {
+    height: 40px;
+    top: 141px;
+    left: 477px;
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    font-size: 30px;
+}
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-        color: #333;
-    }
+.results h2,
+.results p {
+    text-align: center;
+    color: white;
+}
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        border: none;
-        border-bottom: 2px solid #ccc;
-        outline: none;
-        width: 100%;
-        padding: 5px 0;
-        font-size: 16px;
-        color: #333;
-    }
 
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    textarea:focus {
-        width: 100%;
-        border-bottom: 2px solid #FF6565;
-    }
+.photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 170px;
+}
 
-    #name,
-    #email,
-    #message {
-        width: 10%;
-    }
+.pentagone {
+    width: 180px;
+    height: 180px;
+    top: 381px;
+    left: 207px;
+}
 
-    footer {
-        background-color: #071629;
-        position: relative;
-        text-align: center;
-        padding: 20px 0;
-    }
+.image-container {
+    position: relative;
+    /* Allow absolute positioning of child elements */
+    width: 200px;
+    /* Set width for the container */
+    height: 200px;
+    /* Set height for the container */
+    overflow: hidden;
+    /* Ensure contents do not overflow */
+}
 
-    .fin {
-        width: 180px;
-        margin-right: 900px;
-    }
 
-    .social img {
-        width: 30px;
-        height: 30px;
-        top: 90px;
-        left: 1070px;
-        color: white;
-    }
 
-    .social {
-        margin-left: 500px;
-    }
+.text {
+    position: absolute;
+    /* Position the text absolutely within the container */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
+    text-align: center;
+    /* Center text */
+    color: white;
+    /* Set text color (adjust as needed) */
+}
+
+.text h3 {
+    font-size: 30px;
+}
+
+.text h3,
+.text p {
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove padding */
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-group {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Space between form groups */
+}
+
+label {
+    display: block;
+    /* Make labels block elements */
+    margin-bottom: 5px;
+    /* Space between label and input */
+    color: #333;
+    /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    /* Remove border */
+    border-bottom: 2px solid #ccc;
+    /* Create a bottom border */
+    outline: none;
+    /* Remove outline */
+    width: 100%;
+    /* Full width */
+    padding: 5px 0;
+    /* Padding for better spacing */
+    font-size: 16px;
+    /* Font size */
+    color: #333;
+    /* Input text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 2px solid #FF6565;
+    /* Change color on focus */
+}
+
+
+#name,
+#email,
+#message {
+    width: 10%;
+}
+
+footer {
+    background-color: #071629;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    /* Add padding for spacing */
+}
+
+.fin {
+    width: 180px;
+    margin-right: 900px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    top: 90px;
+    left: 1070px;
+    color: white;
+}
+
+.social {
+    margin-left: 500px;
 }
