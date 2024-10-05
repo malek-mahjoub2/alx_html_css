@@ -16,7 +16,7 @@ function checkAnswer() {
         const feedbackElement = document.getElementById('feedback');
         feedbackElement.textContent = "Please select an answer!";
     }
-    
+
 const submitButton = document.getElementById('submit-answer');
 submitButton.addEventListener('click', checkAnswer);
 
