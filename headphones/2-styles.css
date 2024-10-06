@@ -4,3 +4,64 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1 {
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+.res {
+    text-align: center;
+    color: white;
+    margin: 80px;
+    font-size: 12px;
+}
+
+.pentagone {
+    position: relative;
+    width: 150px; /* Set width for the pentagon */
+    height: 150px; /* Set height for the pentagon */
+    background-color: #FF6565; /* Background color */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation on hover */
+}
+
+.pentagone:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    background-color: #FF9A9A; /* Change color on hover */
+}
+
+.pentagone span {
+    text-align: center;
+    padding: 10px; /* Optional: for spacing */
+}
+
+/* Flexbox for photos */
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    position: relative;
+}
+
+/* Text positioning */
+div .text {
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .pentagone {
+        width: 100px;
+        height: 100px; 
+    }
+}

@@ -6,10 +6,11 @@ body {
     margin: 0;
     height: 100vh;
 }
-    
+
 nav img {
-    width: 10pc;
+    width: 10%;
 }
+
 nav {
     display: flex;
     margin: 30px;
@@ -26,33 +27,41 @@ a {
     text-decoration: none;
     margin-right: 15px;
 }
+
 main {
-    padding:300px;
-    color:white;
+    padding: 20px; /* Adjust for mobile */
+    color: white;
+    text-align: center;
 }
+
 h1 {
     margin-bottom: 0;
 }
-containt {
+
+.content {
     text-align: center;
 }
 
 button {
     color: white;
-    width: 10pc;
-    position: relative;
-    left: 300px;
+    width: 10%; /* Adjust unit */
     height: 40px;
     border-radius: 20px;
     background-color: #FF6565;
     border: none;
     cursor: pointer;
 }
+
+button:hover {
+    opacity: 0.9; /* Button hover effect */
+}
+
 .sous-title {
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 50px;
 }
-.para{
+
+.para {
     margin-top: 40px;
 }
 
@@ -60,8 +69,13 @@ nav a:hover,
 nav a:active {
     color: #FF6565; 
 }
+
 @media (max-width: 480px) {
     nav {
         flex-direction: column; 
         align-items: center; 
-    }}
+    }
+}
+.or {
+    padding-top: 300px;
+}
