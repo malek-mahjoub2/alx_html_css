@@ -1,62 +1,6 @@
-.results {
-    width: 1400px;
-    height: 650px;
-    top: 1494px;
-    left: 1px;
+body {
+    height: 100vh;
     background-image: url(images/headphones_hero_2.jpg);
-    padding: 20px 0; /* Add padding around the content */
-}
-.res {
-    height: 40px;
-    top: 141px;
-    left: 477px;
-    color:white;
-    text-align: center;
-    margin-top: 160px;
-    font-size: 30px;
-}
-
-.results h2, .results p {
-    text-align: center;
-    color: white;
-}
-
-
-.photos {
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: nowrap; 
-    margin-top: 170px;
-}
-.pentagone {
-    width: 180px;
-    height: 180px;
-    top: 381px;
-    left: 207px;
-} 
-
-.image-container {
-    position: relative; /* Allow absolute positioning of child elements */
-    width: 200px; /* Set width for the container */
-    height: 200px; /* Set height for the container */
-    overflow: hidden; /* Ensure contents do not overflow */
-}
-
-
-
-.text {
-    position: absolute; /* Position the text absolutely within the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    text-align: center; /* Center text */
-    color: white; /* Set text color (adjust as needed) */
-}
-.text h3{
-    font-size: 30px;
-}
-.text h3,
-.text p {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove padding */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
